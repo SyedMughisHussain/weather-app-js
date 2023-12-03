@@ -1,0 +1,17 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main{
+    background: linear-gradient(rgb(76, 207, 178));
+    height: 400px;
+    width: 300px;
+}
