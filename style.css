@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    background-color: black;
 }
 
 .container{
@@ -11,7 +12,35 @@
 }
 
 .main{
-    background: linear-gradient(rgb(76, 207, 178));
-    height: 400px;
+    background: linear-gradient(rgb(76, 207, 178), rgb(70, 80, 112));
+    height: fit-content;
     width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.serchBar{
+    display: flex;
+    justify-content: space-between;
+    background: none;
+}
+.input{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 215px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.search-image{
+    height: 18px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
 }
