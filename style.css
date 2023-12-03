@@ -1,7 +1,8 @@
 *{
     margin: 0%;
     padding: 0%;
-    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container{
@@ -30,6 +31,7 @@
     padding: 10px;
     border-radius: 20px;
     width: 215px;
+    color: black;
 }
 
 .input:focus{
@@ -43,4 +45,55 @@
     border-radius: 50%;
     margin-right: 15px;
     cursor: pointer;
+}
+
+.image-weather{
+    height: 120px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.temp{
+    font-size: 55px;
+    margin-left: 100px;
+}
+
+.city-name{
+    font-size: 45px;
+    margin-left: 70px;
+}
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+}
+
+.humidity-perc{
+    font-size: 25px;
+}
+
+.wind-speed{
+    font-size: 20px;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.humidity-image , .wind-image {
+    height: 35px;
+}
+
+.text{
+    display: flex;
+    justify-content: space-around;
 }
