@@ -4,6 +4,8 @@ const temperature = document.querySelector(".temp");
 const city_Name = document.querySelector(".city-name");
 const humidity_perc = document.querySelector(".humidity-perc");
 const wind_speed = document.querySelector(".wind-speed");
+const image_weather = document.querySelector('.image-weather');
+
 
 
 function main() {
