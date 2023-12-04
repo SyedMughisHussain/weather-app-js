@@ -17,8 +17,12 @@ function main() {
 async function fetchApi(cityName) {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=ed9762be5575457144a931c00af77267&units=metric`;
   const response = await fetch(url);
-  const data = await response.json();
-  showInFrontEnd(data);
+  if (response.status === 200) {
+    const data = await response.json();
+    showInFrontEnd(data);
+  } else {
+    alert("Enter correct city name.");
+  }
 }
 
 function showInFrontEnd(weather) {
@@ -33,20 +37,15 @@ function showInFrontEnd(weather) {
 function imageWeather(data) {
   if (data.weather[0].main === "Clear") {
     image_weather.src = "./images/clear.png";
-  }
-  else if(data.weather[0].main === "Rain"){
+  } else if (data.weather[0].main === "Rain") {
     image_weather.src = "./images/rain.png";
-  }
-  else if(data.weather[0].main === "Mist"){
+  } else if (data.weather[0].main === "Mist") {
     image_weather.src = "./images/mist.png";
-  }
-  else if(data.weather[0].main === "Clouds"){
+  } else if (data.weather[0].main === "Clouds") {
     image_weather.src = "./images/clouds.png";
-  }
-  else if(data.weather[0].main === "Drizzle"){
+  } else if (data.weather[0].main === "Drizzle") {
     image_weather.src = "./images/drizzle.png";
-  }
-  else if(data.weather[0].main === "Snow"){
+  } else if (data.weather[0].main === "Snow") {
     image_weather.src = "./images/snow.png";
   }
 }
